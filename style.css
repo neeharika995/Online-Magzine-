@@ -1,0 +1,321 @@
+#header{
+    display:flex;
+   align-items: center; 
+   justify-content: space-between;
+   padding: 10px 10px;
+   background-color:rgb(248, 9, 37);
+   box-shadow: 0 5px 15px rgba(198, 23, 23, 0.06);
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+#header img{
+    border-radius: 50px 50px;
+    border:none;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#navbar li{
+    list-style: none;
+    padding:0px 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:600;
+    color:rgb(14, 14, 14);
+
+} 
+#navbar li a:hover,
+    #navbar li a.active{
+
+    
+    color:rgb(252, 247, 248);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width:30%;
+    height:2px;
+    background:#088178;
+    position:absolute;
+    bottom: -2px;
+    left: 20px;
+    
+
+}
+#main{
+    background-image: url(images/n31.jpg);
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding:0 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#main h2{
+    padding-bottom: 15px;
+    padding:0 60px;
+    color: blanchedalmond;
+
+
+}
+#main h1{
+    color:rgb(251, 252, 250);
+    padding:0 60px;
+
+}
+
+#main button{
+    background-color: transparent;
+    color:rgb(8, 4, 22);
+    border: 0;
+    padding:0px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 30px;
+}
+.section-p1{
+    padding:20px 20px;
+}
+#feature{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+} 
+#feature .fe-box{
+    width:200px;
+    text-align:center;
+    box-shadow: 20px 20px 34px;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin:1px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px #fcfcfc1a;
+}
+#feature .fe-box h5{
+    display: inline-block;
+    padding:9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:#088178;
+    background-color:#041a3d;
+}
+#feature .fe-box img{
+    width:100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box:nth-child(2) h5{
+    background-color: deeppink;
+    color: black;
+}
+#feature .fe-box:nth-child(3) h5{
+    background-color: rgb(194, 34, 68);
+    color: black;
+
+}
+#feature .fe-box:nth-child(4) h5{
+    background-color: rgb(228, 83, 20);
+    color: black;
+}
+#feature .fe-box:nth-child(5) h5{
+    background-color: rgb(50, 240, 17);
+    color:black;
+}
+#product1{
+    text-align: center;
+    font-size: 40px;
+}
+#product1 .pro-container{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+#product1 .pro{
+    width:23%;
+    min-width: 25px;
+    padding:10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow:20px 20px 30px rgba(0,0,0,0.02);
+    margin:15px 0;
+    transition: 0.2s ease;
+}
+#product1 .des{
+    text-align:left;
+}
+#product .pro img{
+    width:100%;
+    border-radius:10px;
+}
+#product1 .des span{
+    font-size: 12px;
+    color: dimgray;
+}
+#product1 .des h4{
+    color:black;
+    padding-top: 0px;
+    font-size:15px;
+
+}
+.star{
+    font-size: 14px;
+    color: goldenrod;
+}
+
+.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding:15px 30px;
+    color:black;
+    background-color: crimson;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 00.2s;
+}
+#sm-banner{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    color:rgb(12, 11, 12);
+    font-size: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    background-image: url(img/f7.webp) ;
+    background-size:cover;
+    background-position: right;
+    padding: 30px;
+}
+#sm-banner button{
+    font-size: 12px;
+    font-weight: 300;
+    padding:15px 30px;
+    color:bisque;
+    background-color:darkred;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 00.2s;
+
+}
+#sm-banner .banner-box1{
+    color: beige;
+    font-size: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    background-image: url(img/mmm.jpg) ;
+    background-size:cover;
+    background-position: right;
+}
+#sm-banner .banner-box2{
+    color: beige;
+    font-size: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    background-image: url(img/mmm.jpg) ;
+    background-size:cover;
+    background-position: right;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center ;
+    background-position: 20% 30%;
+    background-color: #041a3d;
+}
+#newsletter .newstext p{
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter .newstext h4{
+    font-size: 22px;
+    padding-left: 20px;
+    font-weight: 700;
+    color: bisque;
+
+}
+.form{
+    padding-right: 30px;
+
+}
+#newsletter p span{
+    font-style: italic;
+    color:crimson
+}
+#newsletter input{
+    height: 3.125em;
+    font-size:14px;
+    width:100%;
+    border:1px solid transparent;
+    border-radius: 4px;
+    outline:none;
+
+}
+#newsletter button{
+    background-color: #088178;
+    color:#fff;
+    white-space:nowrap;
+}
+#newsletter .form{
+    display:flex;
+    font-size:20px;
+}
+#footer{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+    #footer .details img{
+        border: #088178;
+        border-radius: 50px 50px;
+
+    }
+#footer a:hover{
+    color:brown
+}
+#footer a{
+    text-decoration: none;
+    color: #041a3d;
+    cursor:pointer;
+
+}
+#copyrights{
+    font-size:20px;
+    background-color: black;
+    color: aliceblue;
+}
+
+    
